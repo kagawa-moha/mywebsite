@@ -1,0 +1,1 @@
+let marks = prompt("Enter marks")
