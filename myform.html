@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form class="myform" id="myform">
+        <label>First Name</label>
+        <input name="fname" id="fname" class="">
+        <br><br>
+        <label>Email</label>
+        <input name="iname" id="" class="iname">
+        <input type="submit" value="submit">
+    </form>
+     <script>
+        var fname = document.getElementById("fname").value
+        var iname = documen.getElementById("iname").value
+        for (let value of myvalues)
+        {
+            console.log(value);
+        }
+        document.getElementById("myform").addEventListener("submit",
+            //send all element received to this function
+            function(my_submitted_form)
+             {
+                my_submitted_form.preventDefault();
+                //call the second function to process the data while passing values
+                process_form_data( my_submitted_form.target)
+
+            }
+        );
+
+
+
+
+    </script>
+    <script>
+        function process_form_data(m)
+        {
+            //create 
+          let formdata = new FormData(m);
+          let myvalue = formdata.entries();
+
+          //
+          for (let value of myvalues)
+          {
+            console.log(value);
+          }   
+        }
+        
+    </script>
+     <!--script>
+        function test(x,y,z)
+        {
+            let total = x + y + z;
+            if(total == 67)
+            alert("test")
+
+        }
+        test(20,10,30)
+    </script -->
+</body>
+
+</html>

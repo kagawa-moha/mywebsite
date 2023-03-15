@@ -6,4 +6,3 @@ for (i = 4; i >= 5; i--) {
 }
 let mydata = ["Nrb","Msa","Nkr","Eld","Ksm"]
 
-for(i=0; i)
